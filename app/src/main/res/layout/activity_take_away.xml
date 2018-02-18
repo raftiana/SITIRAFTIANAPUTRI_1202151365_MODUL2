@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raftiana.sitiraftianaputri_1202151365_modul2.TakeAway">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="Identitas Pemesanan :"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Nama"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/hp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nama"
+            android:layout_alignStart="@+id/nama"
+            android:layout_below="@+id/nama"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/hp"
+            android:layout_alignRight="@+id/hp"
+            android:layout_below="@+id/hp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Alamat"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/catatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alamat"
+            android:layout_alignStart="@+id/alamat"
+            android:layout_below="@+id/alamat"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Catatan"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/pesan"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/catatan"
+            android:layout_marginTop="20dp"
+            android:text="PILIH PESANAN"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="319dp"
+            android:onClick="tesPesan"
+            />
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pesan"
+            android:layout_marginLeft="67dp"
+            android:layout_marginStart="67dp"
+            android:text="Pilih Tanggal" />
+
+        <Button
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/date"
+            android:layout_toEndOf="@+id/date"
+            android:layout_toRightOf="@+id/date"
+            android:text="Pilih waktu" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

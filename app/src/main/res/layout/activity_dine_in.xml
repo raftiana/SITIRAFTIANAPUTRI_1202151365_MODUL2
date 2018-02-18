@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raftiana.sitiraftianaputri_1202151365_modul2.DineIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text=" Pilih Pesanan"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="215dp"
+            android:onClick="pesan"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:text="Detail Customer :"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nama"
+            android:layout_alignStart="@+id/nama"
+            android:layout_below="@+id/nama"
+            android:layout_marginTop="29dp"
+            android:text="No Meja :"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/nama"
+            android:layout_alignRight="@+id/nama"
+            android:layout_alignTop="@+id/textView4"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="151dp"
+            android:entries="@array/spinner"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
